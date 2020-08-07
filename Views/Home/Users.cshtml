@@ -1,0 +1,26 @@
+@using ViewModelFun.Models
+@model List<User>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Many Users</title>
+</head>
+<body>
+    <main>
+        <h1>Here are some Users!</h1>
+        <table>
+            <tbody>
+                @foreach (User user in Model)
+                {
+                    <tr>
+                        <td>@user.FirstName @user.LastName</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
